@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ivy</id>
+    <version>2.4.0</version>
+    <packageSourceUrl>https://github.com/tdunnington/IvyChocolatey</packageSourceUrl>
+    <owners>Tim Dunnington</owners>
+    <title>ivy (Install)</title>
+    <authors>Apache Software Foundation</authors>
+    <projectUrl>http://ant.apache.org/ivy/</projectUrl>
+    <iconUrl>http://ant.apache.org/ivy/images/logo.png</iconUrl>
+    <copyright>2014 The Apache Software Foundation</copyright>
+    <tags>ivy ant java</tags>
+    <summary>Installs the Ivy extensions into Ant</summary>
+    <description>Ivy is a package dependency system for Java. The system works in conjunction (and as a plugin to) Ant.</description>
+    <dependencies>
+      <dependency id="ant" />
+    </dependencies>  
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
