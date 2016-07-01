@@ -10,13 +10,18 @@
     <authors>Apache Software Foundation</authors>
     <projectUrl>http://ant.apache.org/ivy/</projectUrl>
     <iconUrl>http://ant.apache.org/ivy/images/logo.png</iconUrl>
+	<licenseUrl>http://ant.apache.org/ivy/license.html</licenseUrl>
     <copyright>2014 The Apache Software Foundation</copyright>
     <tags>ivy ant java</tags>
     <summary>Installs the Ivy extensions into Ant</summary>
     <description>Ivy is a package dependency system for Java. The system works in conjunction (and as a plugin to) Ant.</description>
     <dependencies>
       <dependency id="ant" />
-    </dependencies>  
+    </dependencies>
+	<docsUrl>http://ant.apache.org/ivy/history/latest-milestone/index.html</docsUrl>
+	<mailingListUrl>http://mail-archives.apache.org/mod_mbox/ant-ivy-user/</mailingListUrl>
+	<bugTrackerUrl>http://issues.apache.org/jira/browse/IVY</bugTrackerUrl>
+	<projectSourceUrl>https://github.com/apache/ant-ivy</projectSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
