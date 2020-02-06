@@ -5,9 +5,9 @@ $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageArgs = @{
 	packageName   = 'ivy'
 	unzipLocation = $toolsDir
-	url           = 'http://mirror.cc.columbia.edu/pub/software/apache//ant/ivy/2.4.0/apache-ivy-2.4.0-bin.zip'
+	url           = 'http://mirror.cc.columbia.edu/pub/software/apache//ant/ivy/2.5.0/apache-ivy-2.5.0-bin.zip'
 	softwareName  = 'ivy*'
-	checksum      = '86b581c7be6358e7e98ec76968d9aac8'
+	checksum      = '6502619f1d3a399bc930adb788ab140e'
 	checksumType  = 'md5'
 }
 
@@ -17,4 +17,4 @@ if(!(Test-Path $env:ANT_HOME)) {
 }
 
 Install-ChocolateyZipPackage @packageArgs
-Copy-Item ($toolsDir + "\apache-ivy-2.4.0\ivy-2.4.0.jar") ($env:ANT_HOME + "\lib\ivy-2.4.0.jar")
+Copy-Item ($toolsDir + "\apache-ivy-2.5.0\ivy-2.5.0.jar") ($env:ANT_HOME + "\lib\ivy-2.5.0.jar")
